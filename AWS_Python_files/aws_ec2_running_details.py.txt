@@ -6,10 +6,10 @@
 import boto3
 
 #Copy + paste AWS Access Key from AWS > IAM > User Account name > Security Credentials
-AWS_KEY="AKIAWG7X3FU7IAEXGUK4"
+AWS_KEY="<AWS_KEY HERE>"
 #Copy + paste AWS Secret Access Key from AWS > IAM > User Account name > Security Credentials
-AWS_SECRET="d36UeNnOkg3lQQjtjdLoI23GQHcPRVkvN+xSfREY"
-REGION="us-east-1"
+AWS_SECRET="<AWS_SECRET HERE>"
+REGION="<REGION HERE>"
 
 print("Connecting to EC2")
 ec2 = boto3.client('ec2', aws_access_key_id=AWS_KEY, aws_secret_access_key=AWS_SECRET, region_name=REGION)
