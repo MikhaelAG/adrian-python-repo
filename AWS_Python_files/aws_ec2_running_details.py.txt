@@ -9,6 +9,7 @@ import boto3
 AWS_KEY="<AWS_KEY HERE>"
 #Copy + paste AWS Secret Access Key from AWS > IAM > User Account name > Security Credentials
 AWS_SECRET="<AWS_SECRET HERE>"
+#Copy + paste AWS Region
 REGION="<REGION HERE>"
 
 print("Connecting to EC2")
