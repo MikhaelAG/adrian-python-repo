@@ -1,0 +1,1204 @@
+Adrian Guillory (Dack Dissident)
+
+Python Journal
+
+Class 2
+
+#Lab 1 Strings. below are a bunch of strings that we have written within our first python file
+
+#this is an example of a normal string
+print("My first string was created on 16 April 2023. I am so happy to have begun my python journey!")
+print("I love being a passport bro")
+print("I am conflicted between latina women and asian women")
+print("In the last two weeks, I have found myself liking south korean women more")
+print("I hope to one day meet a half brazilian, quarter japanese, and quarter korean woman!")
+print("I used to crush hard on Mariah Carey")
+
+
+#this is an example of how to put quotations into a string
+print("\"Bruh!\" Julius Irving is the greatest basketball player ever!")
+print("The best Brazilian movie of all time is \"City Of God\".")
+
+#this is an example of how to put a new line into a string
+print("New\nline")
+print("Lebron James is NOT a better basketball player than \nMichael Jordan")
+
+#Lab 2 Variables
+
+#Lab 2 Variables These were the first variables we have written in the class
+
+#this is an example of a variable
+my_str = "Michael Jordan Only won the NBA championship with one team. But LeBron won it with three!"
+print(my_str)
+
+my_str_another = "Allen Iverson may not have won a NBA championship, but he was technically better than MJ"
+print(my_str_another)
+
+blue = "This is what the sky looks like!"
+print(blue)
+
+blue_green_orange_purple = "These colours are terrible!"
+print(blue_green_orange_purple)
+
+#this is an example of how to use variables to deploy massive changes to a lot of code
+
+character_name = "Anis Bryant"
+character_age  = "22"
+character_job = "The CEO of Microsoft and Twitter"
+character_country = "japan"
+
+print("There was a passport bro called " +character_name+",")
+print("he is " +character_age+ " years old")
+print("He works as " +character_job+ ".")
+print("He got married to a beautiful half brazilian half japanese woman from " +character_country+ ".")
+
+Lab 3 Comments
+
+#this is an example of a comment the hashtag at the beinning let's pythond know what we are working at a comment
+
+#Lab 2 Variables These were the first variables we have written in the class
+
+character_name = "International Passport"
+character_age  = "45"
+character_job = "IT Professional"
+character_country = "panama"
+
+print("There was a passport bro called " +character_name+",")
+print("he is " +character_age+ " years old")
+print("IP works as an " +character_job+ ".")
+print("He got married to a beautiful black woman from " +character_country+ ".")
+
+_____________________________________________________________________________
+
+04-23-2023 Class 3 Notes
+
+#Storing numbers within variables
+
+my_num = 50
+print(my_num)
+
+my_num = 150
+print(my_num)
+
+my_num = 200
+print(my_num)
+
+my_number = 10
+print(my_number)
+
+number_my = 5
+print(number_my)
+
+#Using the str() function to convert a number into a string
+
+my_num = 90
+print(str(my_num) + " is the best number ever!")
+
+#assigned by IP to repeat first lab of Class 3
+
+my_num = 31
+print(my_num)
+
+#Common number functions to use in python
+#abs function - this prints the absolute value of a number
+
+my_num = -80
+print(abs(my_num))
+
+my_num2 =-50
+print(abs(my_num2))
+
+my_num3 = -15
+print(abs(my_num3))
+
+my_num4 = -10
+print(abs(my_num4))
+
+my_num5 = -20
+print(abs(my_num5))
+
+my_num = 59
+print(my_num)
+
+#power function - this allows us to pass in two pieces of numerical information to get the power result from the number
+
+print(pow(3,5))
+print(pow(4,9))
+print(pow(8,100))
+print(pow(90,40))
+print(pow(4,9))
+
+#max function - this gives you the highest number out of the numbers you put in the brackets
+
+print(max(4,2))
+print(max(8,100))
+print(max(50,20))
+print(max(1,2))
+print(max(45,97))
+
+#main function - this is the opposite of the max function - minimum number from two numerical values
+
+print(min(2,1))
+print(min(5,9))
+print(min(10,15))
+print(min(4,16))
+print(min(100,250))
+print(min(30,40))
+
+#round function - this rounds the number to it's correct value
+
+print(round(8.6))
+print(round(7.1))
+print(round(9.0))
+print(round(5.2))
+print(round(8.7))
+
+#import function - used to import other maths functions to use in your python program
+
+#from this math module to import the math function
+from math import *
+
+print(sqrt(90))
+print(sqrt(150))
+print(sqrt(20))
+print(sqrt(35))
+print(sqrt(70))
+
+#import function - used to import other maths functions to use in your python program
+
+#from this math module to import the math function
+from math import *
+
+print(tan(40))
+print(tan(20))
+print(tan(90))
+print(tan(65))
+print(tan(23))
+_____________________________________________________________________________
+05-14-2023 Class 4 Notes
+
+#lab 1 - working on the input function
+
+name = input("Enter Your Name To Start The Game: ")
+level = input("Enter Your Level Number To Continue The Game: ")
+print("Hello " + name + " ! You are at Level " + level)
+#input() starts the game, asks for name
+#print('string' + input function + 'string'2 + ... + input function n + 'string'n) prints out the inputs
+-----------------------------------------------------------------------------
+#lab 2 - building a calculator using the input function
+
+number1 = input("Please enter a number: ")
+number2 = input("Please enter a second number: ")
+result = int(number1) + int(number2)
+
+print(result)
+# + is to add, * is to multiply, / is to divide
+#int() is a function for an integer a of whole number. Converts the string 'number1' to a number.
+#without int(), it only prints out the strings
+#float() function is for a decimal number
+#when using math function, float() must be used for non-integer results
+-----------------------------------------------------------------------------
+
+#lab 3 - use input function to rate a user's mood
+
+print("Hi user, how would you rate your mood on a scale of 1 to 10?")
+
+mood_rating = input()
+print("You feel like a " + mood_rating + "." "\nThanks for letting us know!")
+#used in rating a customer service
+_____________________________________________________________________________
+05-21-2023 Class 5 Notes
+
+Lists
+
+#lab 1 - creating our first list
+
+anime = ["Naruto","Shingeki No Kyojin", "Bleached", "Yu Yu Hakusho", "Dragonball Z"]
+#List ["Naruto",...,"Dragonball Z"] is stored in the variable anime
+#Lists are in [] - square brackets
+print(anime)
+-----------------------------------------------------------------------------
+#lab 2 - print out a specific element or value from this list
+
+cars = ["Telsa", "BMW", "Nissan GTR", "Ferrari", "Ford"]
+print(cars[4])
+#using a negative 1 gives last element first, [-2] gives second to last element second, and so on
+-----------------------------------------------------------------------------
+#lab 3 - printing multiple elements from your list
+
+laptops = ["Lenovo", "Apple", "HP", "Dell", "Samsung"]
+print(laptops[1:])
+#pring(laptops[1:]) only prints out elements from Apple and onwards
+print(laptops[2:])
+print(laptops[3:])
+print(laptops[0:3])
+#print(laptops[0:3]) prints out elements 0 to 2
+#print(laptops[0:n+1]) prints out range of elements from 0 to n from the list
+print(laptops[0:4])
+-----------------------------------------------------------------------------
+#lab 4 - modifying a value in your list and updating it
+
+anime = ["Bleach", "Naruto", "Captain Tsubasa", "One Piece", "Dragonball"]
+anime [3] = "Slam Dunk"
+#One Piece is replaced with Slam Dunk by calling anime element 3
+print(anime[3])
+_____________________________________________________________________________
+05-28-2023
+
+Class 6 Notes
+
+#List Functions
+#Lab 1 - extend function
+
+anime = ["Naruto","Bleach", "Attack On Titan", "Captain Tsubasa", "Dragon Ball Z"]
+cars = ["Tesla", "BMW", "Range Rover", "Aston Martin", "Mercedes"]
+
+#anime.extend() adds cars to anime list
+anime.extend(cars)
+
+print(anime)
+-----------------------------------------------------------------------------
+#Lab 2 - append function
+
+anime = ["Naruto","Bleach", "Attack On Titan", "Captain Tsubasa", "Dragon Ball Z"]
+cars = ["Tesla", "BMW", "Range Rover", "Aston Martin", "Mercedes"]
+
+#anime.append() adds element(s) to the end of Dragon Ball Z
+anime.append("Death Note")
+
+print(anime)
+-----------------------------------------------------------------------------
+#Lab 3 - insert function
+
+anime = ["Naruto","Bleach", "Attack On Titan", "Captain Tsubasa", "Dragon Ball Z"]
+cars = ["Tesla", "BMW", "Range Rover", "Aston Martin", "Mercedes"]
+
+#anime.insert(n, element) adds element beginning at position n
+anime.insert(4, "Gundam")
+
+print(anime)
+-----------------------------------------------------------------------------
+#Lab 4 - remove function
+
+anime = ["Naruto","Bleach", "Attack On Titan", "Captain Tsubasa", "Dragon Ball Z"]
+cars = ["Tesla", "BMW", "Range Rover", "Aston Martin", "Mercedes"]
+
+#anime.remove(elment) removes element from list. must match case. case-sensitive
+anime.remove("Bleach")
+
+print(anime)
+-----------------------------------------------------------------------------
+#Lab 5 - clear function
+
+anime = ["Naruto","Bleach", "Attack On Titan", "Captain Tsubasa", "Dragon Ball Z"]
+cars = ["Tesla", "BMW", "Range Rover", "Aston Martin", "Mercedes"]
+
+#anime.clear() clears list.
+anime.clear()
+
+print(anime)
+-----------------------------------------------------------------------------
+#Lab 6 - index function
+
+anime = ["Naruto","Bleach", "Attack On Titan", "Captain Tsubasa", "Dragon Ball Z"]
+cars = ["Tesla", "BMW", "Range Rover", "Aston Martin", "Mercedes"]
+
+#anime.index() tells you the numerical value of element from list.
+
+print(anime.index("Attack On Titan"))
+-----------------------------------------------------------------------------
+#Lab 7 - count function
+
+anime = ["Naruto","Bleach", "Bleach", "Bleach", "Bleach", "Attack On Titan", "Captain Tsubasa", "Dragon Ball Z"]
+cars = ["Tesla", "BMW", "Range Rover", "Aston Martin", "Mercedes"]
+
+#anime.count() tells you how many times value appears in the list.
+print(anime.count("Bleach"))
+-----------------------------------------------------------------------------
+#Lab 8 - sort function
+
+anime = ["Naruto","Bleach", "Bleach", "Bleach", "Bleach", "Attack On Titan", "Captain Tsubasa", "Dragon Ball Z"]
+cars = ["Tesla", "BMW", "Range Rover", "Aston Martin", "Mercedes"]
+
+#anime.sort() sorts list in alphabetical or ascending order.
+anime.sort()
+print(anime)
+
+numbers = [8,9,2,5, 1]
+#numbers.sort() sorts list in numerical order
+numbers.sort()
+print(numbers)
+-----------------------------------------------------------------------------
+#Lab 9 - reverse function
+
+anime = ["Naruto", "Bleach", "Attack On Titan", "Captain Tsubasa", "Dragon Ball Z"]
+cars = ["Tesla", "BMW", "Range Rover", "Aston Martin", "Mercedes"]
+
+#anime.reverse() sorts list in reverse order.
+anime.reverse()
+print(anime)
+______________________________________________________________________________
+06-04-2023
+
+Class 7 Notes
+
+#Tuples
+
+#Lab1 - Creating our first tuple
+#tuple uses parenthesis
+tuple = ("Tesla", "Bentley", "Hummer", "Jeep", "Ferrari")
+print(tuple)
+
+anime = ("Naruto", "Bleach", "Dragon Ball", "Hunter x Hunter")
+print(anime)
+
+laptops = ("HP", "Samsung", "Apple", "Sony")
+print(laptops)
+
+numbers = (5, 9, 2, 1, 0)
+print(numbers)
+
+countries = ("Japan", "Spain", "Morocco", "Canada")
+print(countries)
+----------------------------------------------------------------------------------
+#Lab 2 - printing a single value from our tuple
+
+tuple = ("Tesla", "Bently", "Ferrari", "Nissan", "BMW")
+#tuples also start their elements from 0 like listss
+#Print out only Tesla at position 0 using brackets
+print(tuple[0])
+-----------------------------------------------------------------------------------
+#Lab 3 - example on why tuples are immutable (meaning they cannot be changed)
+
+tuple = ("Tesla", "Bently", "Hummer", "Jeep", "Ferrari")
+#Change Bently to Nissan
+tuple[1] = "Nissan"
+#print Nissan in output
+print(tuple[1])
+#Terminal Output -    tuple[1] = "Nissan"
+#TypeError: 'tuple' object does not support item assignment
+#Use lists to change, not tuples
+-----------------------------------------------------------------------------------
+#Lab 4 - Examples on why lists are mutable (meaning they can be changed)
+
+#tuple is now a list with square brackets
+tuple = ["Tesla", "Bently", "Hummer", "Jeep", "Ferrari"]
+#Change Jeep To Nissan
+tuple[3] = "Nissan"
+print(tuple[3])
+___________________________________________________________________________________
+06-11-2023
+
+Class 8 Notes
+
+#Complex Functions
+
+#Lab 1 - creating our first function
+
+#def tells Python to create or use a function
+#what_car_you_drive is the new function
+
+def what_car_you_drive():
+
+#print function is installed or inside the function 
+
+    print("I Drive a Tesla")
+
+#include a () at the end to ensure the output is shown    
+what_car_you_drive()
+#Complex Functions
+
+#Lab 2 - another function exercise
+
+#Defined the function named 'the()'
+def the():
+#indented to include print function
+    print("The")
+    
+print("Enter")
+the()
+print("Game")
+---------------------------------------------------------------------------
+#Lab 3 - slightly more complex function code
+
+#include model inside function parentheses
+#called a parameter
+
+def make(model):
+#the plus (+) operator includes parameter inside print function
+    print("Blue " + model)
+
+#inserting car models inside the make function
+#all the strings are linked back to make() function
+
+make("Tesla")
+make("Nissan")
+make("Benz")
+----------------------------------------------------------------------------
+#Lab 4 - another complex function code
+
+#add 2 parameters in the function, name and height
+#function defined is only to accept two parameters
+
+def introductions(name, height):
+    print("Good Afternoon "+ name + " you work in IT and you are " + height)
+
+#each parameter below matches the original function    
+
+introductions("Edwin", "190 CM")
+introductions("Jason", "185 CM")
+introductions("Hannah", "120 CM")
+introductions("Keisha", "570 CM")
+----------------------------------------------------------------------------
+#Lab 5 - using tuples within a function
+
+#include asterisk * before cars parameter for vehicles() function
+
+def vehicles(*cars):
+#include [] after cars to name a specific position in the tuple
+    print("The best car in the world is " +cars[4])
+
+#calls back from vehicle() to use this tuple    
+vehicles("Tesla", "Mercedes", "Range Rover", "Nissan", "Ferrari")
+----------------------------------------------------------------------------
+#Lab 6 - adding numbers together using the return statement in our function
+
+#defining a function 'add' to add numbers
+def add():
+#return tells Python user is using the return function to add numbers
+    return 8+3+10
+
+print(add())
+-----------------------------------------------------------------------------
+#Lab 7 - mutliplying numbers with the return statement in our function
+
+#defining function as mulitply() to multiply 2 parameters, 'num1' and 'num2'
+def multiply(num1,num2):
+
+#tell Python to multiply num1 and num2
+#defined as result
+    result = num1 * num2
+#return result
+    return result
+
+#multiply 5 * 5
+#print result
+print(multiply(5,5))
+______________________________________________________________________________
+06-18-2023
+Class 9 Notes
+#Dictionary Methods
+
+#Lab 1 - writing our first dictionary and calling from it
+
+NbaMostValuablePlayerAward = {
+#2013 is the first key for MVP Award dictionary
+#Lebron James - the key value 2013
+#key is separated by colon
+    2013: "Lebron James", 
+    2014: "Kawhi Leonard",
+    2015: "Andrew Iguodala",
+    2016: "Lebron James",
+    2017: "Kevin Durant",
+    2018: "Kevin Durant",
+    2019: "Kawhi Leonard",
+    2020: "Lebron James",
+    2021: "Giannis Antetokoumpo",
+    2022: "Stephen Curry",
+    2023: "Nikola Jokic"
+}
+#print dictionary name ['dictionary key']
+print(NbaMostValuablePlayerAward[2022])
+------------------------------------------------------------------------------
+#Lab 2 - another example of a dictionary
+
+movie = {
+#key is now a regular string 'title'
+    "title": "Goodfellas",
+    "Director": "Martin Scorcese",
+#key value can either be a number or a string
+    "Year": 1990,
+    "Rating": 9.5
+}
+
+#print dictionary ['key string name']
+print(movie["Year"])
+-----------------------------------------------------------------------------
+#Lab 3 - updating the movie value score
+
+movie = {
+#key is now a regular string 'title'
+    "title": "Goodfellas",
+    "Director": "Martin Scorcese",
+#key value can either be a number or a string
+    "Year": 1990,
+    "Rating": 9.5
+}
+
+#update key string 'Rating' to a different key value
+#you must express updated key value, defined as dictionary[key string name] + 2
+#use parentheses
+movie["Rating"] = (movie["Rating"] + 2)
+
+#print dictionary ['Rating']
+#case-sensitive is important in key string name
+print(movie["Rating"])
+-------------------------------------------------------------------------------
+#Lab 4 - store a list inside of a dictionary and store a dictionary within that dictionary
+
+movie = {}
+#movie[] are contained inside the movie {}
+#different syntax, same logic
+movie["title"] = "City of God"
+movie["Director"] = "Fernando Meirelles"
+movie["Year"] = 2002
+movie["Rating"] = 8.2
+
+#creating list "Actors" within movie
+#still contained in the movie dictionary
+movie["Actors"] = ["Alexandre Rodirgues", "Alice Braga", "Douglas Silva"]
+#create a dictionary 'more facts' in the movie dictionary
+movie["more_facts"] = {
+    "movielength": 180,
+    "language": "English"
+}
+
+#prints list within a dictionary and a sub-dictionary ' more_facts ' within the primary dictionary 'movie'
+print(movie)
+----------------------------------------------------------------------------------
+#Lab 5 - Dictionary lab with .get example
+
+NbaMostValuablePlayerAward = {
+    2019: "Kawhi Leonard",
+    2020: "Lebron James",
+    2021: "Giannis Anteokoumpo",
+    2022: "Stephen Curry",
+    2023: "Nikola Jokic"
+}
+
+#print Stephen Curry from dictionary with get() dictionary functoin
+print(NbaMostValuablePlayerAward.get(2022))
+----------------------------------------------------------------------------------
+#Lab 6 - Dictionary lab with .values example
+
+NbaMostValuablePlayerAward = {
+    2019: "Kawhi Leonard",
+    2020: "Lebron James",
+    2021: "Giannis Anteokoumpo",
+    2022: "Stephen Curry",
+    2023: "Nikola Jokic"
+}
+
+#print all values from dictionary with values() dictionary functoin
+print(NbaMostValuablePlayerAward.values())
+----------------------------------------------------------------------------------
+#Lab 7 - Dictionary lab with .keys example
+
+NbaMostValuablePlayerAward = {
+    2019: "Kawhi Leonard",
+    2020: "Lebron James",
+    2021: "Giannis Anteokoumpo",
+    2022: "Stephen Curry",
+    2023: "Nikola Jokic"
+}
+
+#print dictionary keys from dictionary with keys() dictionary functoin
+print(NbaMostValuablePlayerAward.keys())
+--------------------------------------------------------------------------------
+#Lab 8 - Dictionary lab with .copy example
+
+NbaMostValuablePlayerAward = {
+    2019: "Kawhi Leonard",
+    2020: "Lebron James",
+    2021: "Giannis Anteokoumpo",
+    2022: "Stephen Curry",
+    2023: "Nikola Jokic"
+}
+
+#print everything from dictionary with copy() dictionary function
+print(NbaMostValuablePlayerAward.copy())
+_____________________________________________________________________________
+06-25-2023 Class 10 Notes
+
+#Conditional Logic
+
+#Lab 1 - if statement example
+
+#introduce two variables C and D
+c = 50
+d = 400
+
+#conditional logic
+if d > c:
+    print("D is greater than C")
+------------------------------------------------------------------------------
+#Lab 2 - if statement complex example
+
+
+price = input("How Much Did You Pay?")
+
+#convert string (price) into a number/integer
+price = int(price)
+if price >= 100:
+    tax = .07
+#print output
+#convet tax to a string
+    print("Your Tax rate is: " +str(tax))
+------------------------------------------------------------------------------
+#Lab 3 - else statement example
+
+c = 400
+d = 50
+
+#end conditional statements if/then with a colon(:)
+if d > c:
+    print("D is greater than C")
+else:
+    print("C is greater than D")
+------------------------------------------------------------------------------
+#Lab 4 - else statement complex example
+
+price = input("How Much Did You Pay?")
+
+price = int(price)
+
+if price >= 100:
+    tax =.07
+    print("Tax rate is: " + str(tax))
+else:
+    tax = 0
+    print("Tax rate is: " + str(tax))
+------------------------------------------------------------------------------
+#Lab 5 - elif statement example
+
+c = 50
+d = 50
+if d > c:
+    print("D is greater than C")
+elif c == d:
+    print("C and D are equal")
+------------------------------------------------------------------------------
+#Lab 6 - bringing if, elif and else altogether
+
+c = 51
+d = 50
+if d > c:
+    print("D is greater than C")
+elif c == d:
+    print("C and D are equal")
+else:
+    print("C is greater than D")
+------------------------------------------------------------------------------
+#Lab 7 - And operator lab
+
+k = 500
+z = 200
+i = 800
+
+#both conditions must be true with the 'and' operator
+
+if i > k and i > z:
+    print("Both conditions are true!")
+------------------------------------------------------------------------------
+#Lab 8 - Or operator lab
+
+k = 500
+z = 200
+i = 800
+
+
+if i > k or z > i:
+    print("One of the conditions is indeed true!")
+------------------------------------------------------------------------------
+#Lab 9 - Not operator lab
+
+k = 500
+z = 200
+i = 800
+
+
+if not k > i :
+    print("It appears K is not greater than I!")
+______________________________________________________________________________
+07-02-2023 Class 11 Notes
+
+While Loop
+
+#Lab 1 - our first while loop example
+
+i = 1
+while i <= 10:
+    print(i)
+# '+= ' operator adds two variables together (i and 1)
+# '=' adds value to the last variable
+    i += 1
+
+print("The Loop Ends Here!")
+------------------------------------------------------------------------------
+#Lab 2 - never ending loop example
+
+i = 1
+while i <= 10:
+    print(i)
+
+print("The Loop Ends Here!")
+-------------------------------------------------------------------------------
+#Lab 3 - while loop with statements
+
+i = 1
+while i <= 5:
+    print("Bleach")
+#recursion formula
+    i = i + 1
+--------------------------------------------------------------------------------
+#Lab 4 - f string lab
+
+#define car variable equal to "Tesla"
+car = "Tesla"
+
+#f string is used to include the 'car' variable with {}
+#f string allows you to pull any variable from code
+print(f"The Car I Drive Is {car}")
+---------------------------------------------------------------------------------
+#Lab 5 - combine while loop with the input function and f strings
+
+name = input("Enter Your Name To Begin The Game: ")
+
+while name == "":
+    print("Player One Did Not Enter His Name")
+    name = input("Enter Your Name To Begin The Game: ")
+# f string pulls name from the while loop
+print(f"Welcome {name}")
+----------------------------------------------------------------------------------
+#Lab 6 - More complex while code
+
+age = int(input("Enter Your Age To Begin The Game: "))
+
+while age < 0:
+#code breaks at age 90 and above
+    print("Age Can't Be Negative")
+    age = int(input("Enter Your Age To Begin The Game: "))
+    
+print(f"You are {age} years old!")
+-------------------------------------------------------------------------------------
+#Lab 7 - Using the NOT operator with while loops
+
+anime = input("Enter an anime series that you like (press q to quit): ")
+
+
+while not anime == "q":
+#q will end the loop
+# without q, the loop will continue to run
+    print(f"You like {anime}")
+    anime = input("Enter another anime series that you like (press q to quit): ")
+
+print("Thanks for letting us know what anime shows you like!")
+-------------------------------------------------------------------------------------
+#Lab 8 - Uing the OR operator with while loops
+
+#convert string into a number with int()
+num = int(input("Enter a Number Between 1 - 20: "))
+
+
+while num < 1 or num > 20:
+#f string pulls num from the while loop
+    print(f"{num} is not valid")
+    num = int(input("Enter a Number Between 1 - 20: "))
+
+#loop breaks when num is valid
+print(f"Your Number is {num}")
+____________________________________________________________________________________
+07-09-2023
+Class 12 Notes
+#For Loop
+
+#Lab 1 - applying 'for' loop for a string
+
+#for loop includes in for Python
+
+#letter is the name of the for loop
+
+#in is the for loop syntax in Python
+
+for letter in "Naruto Uzumaki":
+#Loops or iterates through every single letter in Naruto Uzumaki
+
+    print(letter)
+------------------------------------------------------------------------------------
+#Lab 2 - applying 'for' loop to a list
+
+#Use for loop to iterate bits of code to make statement true
+
+animecharacters = ["Goku", "Vegeta", "Piccolo", "Chi Chi"]
+
+#apply for loop to go through each string in the list
+for anime in animecharacters:
+
+#Prints out every individual string in the animecharacters list
+#Loop ends at Chi Chi
+    print(anime)
+------------------------------------------------------------------------------------
+#Lab 3 - applying for loop to a series of numbers with the range function
+
+#Range function returns a sequence of numbers between the given range
+
+for index in range(20):
+#For loop loops from 0 to 19
+
+    print(index)
+------------------------------------------------------------------------------------
+#Lab 4 - applying for loop to a series of a specific range of numbers
+
+#10 and 20 are the allowed ages to play game
+
+#index is the name of the for loop
+
+for index in range (10, 21):
+#For loops through numbers 10 through 20
+    print(index)
+------------------------------------------------------------------------------------
+#Lab 5 - applying for loop to break statements
+
+#Creating a list of cars
+
+cars = ["Tesla", "BMW", "Mercedes", "Hummer"]
+
+for x in cars:
+    print(x)
+
+#if the loop reaches specific element, Break the for loop, e.g. "BMW"
+    if x == "BMW":
+        break
+------------------------------------------------------------------------------------
+#Lab 6 - applying for loop to continue staements
+
+laptops = ["Lenovo", "HP", "Mac", "Dell", "Toshiba"]
+
+for y in laptops:
+
+#Use continue to remove HP and continue through the loop
+    if y == "HP":
+        continue
+#prints out all elements except HP
+    print(y)
+------------------------------------------------------------------------------------
+#Lab 7 - applying for loop to else statements
+
+animecharacters = ["Vegeta", "Goku", "Piccolo", "Chi Chi", "Yamcha"]
+
+for x in animecharacters:
+    print(x)
+else:
+    print("These Are Some The Characters From Dragonball Z.")
+
+------------------------------------------------------------------------------------
+#Lab 8 - applying for loop to the end= parameter
+
+animecharacters = ["Vegeta", "Goku", "Piccolo", "Chi Chi", "Yamcha"]
+
+for anime in animecharacters:
+#prints all the elements of the loop in one line
+#can be used for managerial, system purposes
+
+    print(anime, end="")
+____________________________________________________________________________________
+07-16-2023
+Class 13 Notes
+#Try Except
+
+#Lab 1 - A program that works correctly
+
+number = int(input("Enter a Number to Start the Game: "))
+print(number)
+
+#this only works for numbers
+------------------------------------------------------------------------------------
+#Lab 2 - A program that does not work correctly
+
+#code breaks with a letter / string
+number = int(input("Enter a Number to Start the Game: "))
+print(number)
+------------------------------------------------------------------------------------
+#Lab 3 - Applying the try except principle to our code
+
+try:
+    number = int(input("Enter a Number to Start the Game: "))
+    print(number)
+#if input is a non-integer, use except
+except:
+    print("Invalid Input, You Did Not Enter a Number! Please Try Again!")
+
+#if statement does not work for try except
+
+#Try except is a Python Best Practice for Error Detection / Error Messaging in Code
+
+#Try except is for front-end user error detection
+------------------------------------------------------------------------------------
+#Lab 4 - Another example of try except to our code
+
+#anything outside the try except block will be excluded from block
+
+try:
+    number = 50/0
+    number = int(input("Enter A Number: "))
+    print(number)
+except:
+    print("Invalid Input, please try again")
+____________________________________________________________________________________
+07-23-2023
+Class 14 Notes
+
+#Lab 1 - creating a text file animelist.txt
+Naruto
+Bleach
+Dragonball Z
+Demon Slayer
+------------------------------------------------------------------------------------
+#Lab 2 - using specific functions if our file can be read
+
+
+#open() opens the file with read permission roperties only (r)
+
+anime_file = open("animelist.txt","r")
+
+#readable() lets you know whether or not the file can be read
+#outputs with true or false (not readable)
+print(anime_file.readable())
+
+#close() lets you close file
+#python best practice to close file after making changes to original file
+#protects file for security purposes and unexpected changes
+anime_file.close()
+------------------------------------------------------------------------------------
+#Lab 3 - reading the contents of a file
+
+anime_file = open("animelist.txt","r")
+
+print(anime_file.read())
+
+anime_file.close()
+
+#Python is change-sensitive
+#always save opened file prior to running code
+-----------------------------------------------------------------------------------
+#Lab 4 - read an individual line from our file
+
+anime_file = open("animelist.txt","r")
+#readline() will read the first line in the text file
+print(anime_file.readline())
+anime_file.close()
+------------------------------------------------------------------------------------
+#Lab 5 - using the .readlines() function to read a specific line we need
+
+anime_file = open("animelist.txt","r")
+
+#readlines() will read the text file
+#a [] after .readlines() allows you to print out a specific element from the text file
+print(anime_file.readlines()[2])
+anime_file.close()
+------------------------------------------------------------------------------------
+#Lab 6 - adding to our list using the (a)ppend mode
+
+anime_file = open("animelist.txt","a")
+
+anime_file.write("\nGundam")
+anime_file.close()
+------------------------------------------------------------------------------------
+#Lab 7 - using (w)rite to overwrite our existing file
+
+anime_file = open("animelist.txt","w")
+
+anime_file.write("Attack On Titan")
+anime_file.close()
+------------------------------------------------------------------------------------
+#Lab 8 - use (w)rite to create a new file
+
+#create a new text filename
+anime_file = open("animelist1.txt","w")
+
+anime_file.write("Nauto \nBleach")
+anime_file.close()
+
+#can use w to push code to publish websites
+____________________________________________________________________________________
+07-30-2023
+Class 14 Notes
+
+#testfile.py code
+
+def add(x,y):
+    return x + y
+
+def sub(x,y):
+    return x - y
+
+def mul(x,y):
+    return x * y
+
+def div(x,y):
+    return x / y
+
+------------------------------------------------------------------------------------
+#Lab 1 - importing from another py file into our main py file
+
+#importing add() function from testfile.py
+
+from testfile import add
+
+print(add(70,30))
+------------------------------------------------------------------------------------
+#Lab 2 - using * to import ever other code into our main py file
+
+#adding * imports all features from testfile.py
+
+from testfile import *
+
+print(add(70,30))
+print(sub(80,60))
+print(mul(70,30))
+print(div(100,5))
+------------------------------------------------------------------------------------
+#lab 3 - creating a word document using the docx module we installed with pip
+
+from docx import Document
+
+document = Document()
+
+#creating a new document
+
+document.save("Document Created by Python.docx")
+____________________________________________________________________________________
+08-06-2023
+Class 15
+
+Classes & Objects
+
+#Lab 1 - creating our first classes and objects
+
+#creating a class called Computer
+class Computer:
+#define attributes of a computer
+#creating computer data type(s) to map out components of a computer
+#defining the class in the __init__() function
+    def __init__(self, screen, motherboard, mouse, headset, brand_is_dell):
+         self.screen = screen
+         self.motherboard = motherboard
+         self.mouse = mouse
+         self.headset = headset
+         self.brand_is_dell = brand_is_dell
+         
+         
+#creating first object
+
+computer1 = Computer("Samsung", "ASRock", "Logitech", "LG", False)
+#creating second object
+computer2 = Computer("LG", "Apple", "Microsoft", "Alienware", True)
+
+print(computer2.motherboard)
+------------------------------------------------------------------------------------
+#Lab 2 - adding a function to our class
+
+#creating a class called Computer
+class Computer:
+#define attributes of a computer
+#creating computer data type(s) to map out components of a computer
+#defining the class in the __init__() function
+    def __init__(self, screen, motherboard, mouse, headset, brand_is_dell, mouseduration):
+         self.screen = screen
+         self.motherboard = motherboard
+         self.mouse = mouse
+         self.headset = headset
+         self.brand_is_dell = brand_is_dell
+         self.mouseduration = mouseduration
+#define new function newbuilt()
+    def newbuilt(self):
+#define a mouse duration rules
+        if self.mouseduration <= 2:
+            return True
+        else:
+            return False
+
+computer1 = Computer("Samsung", "ASRock", "Logitech", "LG", False, 4)
+
+print(computer1.newbuilt())
+____________________________________________________________________________________
+08-13-2023
+Final Class
+
+Inheritance
+
+#Lab 1 - inheritance
+
+class Cars:
+#defining attributes of a car
+#all cars can drive    
+    Drive = True
+    
+    def drift(self):
+        print("This car can drift.")
+        
+    def speed(self):
+        print("This car has top speed.")
+
+#Tesla is the child class of Cars
+#Cars is the parent class        
+class Tesla(Cars):
+#Tesla inherits everything Cars class has
+    pass
+
+class Nissan(Cars):
+#Nissan inherits everything Cars class has
+    pass
+
+class Ford(Cars):
+#Ford inherits everything Cars class has
+    pass
+
+#Creating objects for the child classes
+tesla = Tesla()
+nissan = Nissan()
+ford = Ford()
+
+#This Tesla inherits Drive from the parent class, Cars
+print(Tesla.Drive)
+
+nissan.drift()
+ford.speed()
+
+-----------------------------------------------------------------------------------
+#Lab 1 - inheritance (continued)
+
+class Cars:
+    
+    Drive = True
+    
+    def drift(self):
+        print("This car can drift.")
+        
+    def speed(self):
+        print("This car has top speed.")
+        
+class Tesla(Cars):
+#a unique attribute to Tesla
+    def doors(self):
+        print("This Tesla has two doors.")
+
+class Nissan(Cars):
+#a unique attribute to Nissan
+    def windows(self):
+        print("This Nissan car has blackout windows.")
+
+class Ford(Cars):
+#a unique attribute to Ford
+    def headlights(self):
+        print("This Ford car has two headlights.")
+
+#Creating objects for the child classes
+tesla = Tesla()
+nissan = Nissan()
+ford = Ford()
+
+tesla.doors()
+nissan.windows()
+ford.headlights()
+____________________________________________________________________________________
