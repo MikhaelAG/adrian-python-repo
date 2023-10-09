@@ -11,19 +11,19 @@ import boto3
 from time import sleep
 
 #Copy + paste AWS_Key from AWS
-AWS_KEY="AKIAWG7X3FU7IAEXGUK4"
+AWS_KEY="<AWS KEY HERE>"
 #Copy + paste AWS Secret Access Key from AWS
-AWS_SECRET="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"
-REGION="us-east-1"
+AWS_SECRET="<AWS_SECRET HERE>"
+REGION="<REGION HERE>"
 #Copy + paste AMI ID from AWS
-AMI_ID = "ami-0715c1897453cabd1"
+AMI_ID = "<AMI_ID HERE>"
 #Create Keypair 'cloud' in AWS > EC2 > Key Pairs 
 # Copy + paste Key pair from AWS named 'cloud'
 EC2_KEY_HANDLE = "cloud"
 INSTANCE_TYPE="t2.nano"
 #Get the default security group ID from AWS > EC2 > Security Groups
 #Copy + paste secruity group ID
-SECGROUP_ID="sg-0eb8474b882ea0f58"
+SECGROUP_ID="<SECGROUP_ID HERE>"
 
 print("Connecting to EC2")
 
