@@ -14,6 +14,7 @@ from time import sleep
 AWS_KEY="<AWS KEY HERE>"
 #Copy + paste AWS Secret Access Key from AWS
 AWS_SECRET="<AWS_SECRET HERE>"
+#Copy + paste AWS Region
 REGION="<REGION HERE>"
 #Copy + paste AMI ID from AWS
 AMI_ID = "<AMI_ID HERE>"
