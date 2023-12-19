@@ -66,6 +66,7 @@ def load_match():
 # Dictionary definitions (fighters, bosses, mode) remain the same
 
 # Parsing command-line arguments
+# example arguments : '--fighter [1-13] --stage [A-G] --boss [B1-B7]'
 parser = argparse.ArgumentParser(description='Kang Of Fighterz Game Setup')
 parser.add_argument('--fighter', type=int, required=True, help='Number of the fighter')
 parser.add_argument('--stage', type=str, required=True, help='Code of the stage')
