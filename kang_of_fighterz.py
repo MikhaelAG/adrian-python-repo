@@ -61,7 +61,7 @@ def error_code():
 
 # Loading game after selecting figher, stage, and boss
 def load_match():
-        print(f"\n\nLoading Kang Of Fighterz [...]\n\nRound 1: Stage: {selected_stage}\n----------------------------------\nFighter: {selected_fighter} | Opponent: {selected_boss}\n\nGET READY!!!")
+    print(f"\n\nLoading Kang Of Fighterz [...]\n\nRound 1: Stage: {selected_stage}\n----------------------------------\nFighter: {selected_fighter} | Opponent: {selected_boss}\n\nGET READY!!!")
 
 # Dictionary definitions (fighters, bosses, mode) remain the same
 
