@@ -1,6 +1,8 @@
+import argparse
+
 #Create Character And Stage Select Mode For A Fighting Game
 
-#Fighters Dictionary to Select Fighter By #
+#Fighters Dictionary to Select Fighter by Number
 fighters = {
         1: "Axel",
         2: "Skate", 
@@ -39,49 +41,45 @@ mode = {
             "G": "Keisha's House"
         }
 
-#Game Title
+#Game Title -- "Kang Of Fighterz"
 
-game = "Kang Of Fighterz"
-
-#player select menu
-
-player = int(input(f"{game}\n\nPress # To Select Your Fighter \n\n{fighters} \n(Press 0 to Quit): "))
-
-if not player == 0:
-   
-    while not fighters.get(player):
-        print("You Did Not Choose the Correct #!")
-        player = int(input(f"Press # To Select Your Fighter \n\n{fighters} \n(Press 0 to Quit): "))
+# fighter input by number
+def select_fighter(fighter_number):
+    return fighters.get(fighter_number, "Invalid Fighter Number")
         
-    else:
-        print(f"You Chose {fighters.get(player)}")
+# stage input by code
+def select_stage(stage_code):
+    return mode.get(stage_code, "Invalid Stage Code")
+        
+# boss input by code
+def select_boss(boss_code):
+    return bosses.get(boss_code, "Invalid Boss Code")
 
-#stage mode select menu
-    stage  = input(f"Press Code To Select Stage \n\n{mode} \n(Press Q to Quit): ")
-    
-    if not stage == "Q":
-            while not mode.get(stage):
-                print("You Did Not Choose The Correct Stage!")
-                stage  = input(f"Press Code To Select Stage \n\n{mode} \n(Press Q to Quit): ")
+# error message after making an invalid input (fighter/stage/boss)
+def error_code():
+    print("Invalid selection made. Please check your inputs.")
 
-#boss mode select menu
-    enemy = input(f"Press Code To Select Boss \n\n{bosses} \n(Press Q to Quit): ")
-    if not enemy == 'Q':
-            while not bosses.get(enemy):
-                print("Invalid Number!")
-                enemy = input(f"Press Code To Boss \n\n{bosses} \n(Press Q to Quit): ")
+# Loading game after selecting figher, stage, and boss
+def load_match():
+        print(f"\n\nLoading Kang Of Fighterz [...]\n\nRound 1: Stage: {selected_stage}\n----------------------------------\nFighter: {selected_fighter} | Opponent: {selected_boss}\n\nGET READY!!!")
 
-#Loading match
-    
-            print(f"\n\nLoading {game} [...]\n\nRound 1: Stage: {mode.get(stage)}\n----------------------------------\nFighter: {fighters.get(player)} | Opponent: {bosses.get(enemy)}\n\nGET READY!!!")
-    else:            
+# Dictionary definitions (fighters, bosses, mode) remain the same
 
-#To Shutdown Game After Quitting Stage Mode Menu
+# Parsing command-line arguments
+parser = argparse.ArgumentParser(description='Kang Of Fighterz Game Setup')
+parser.add_argument('--fighter', type=int, required=True, help='Number of the fighter')
+parser.add_argument('--stage', type=str, required=True, help='Code of the stage')
+parser.add_argument('--boss', type=str, required=True, help='Code of the boss')
 
-        print(f"\n\nShutting Down {game} ...\n\n GOOD BYE!!!")        
+args = parser.parse_args()
+
+# Selecting fighter, stage, and boss
+selected_fighter = select_fighter(args.fighter)
+selected_stage = select_stage(args.stage)
+selected_boss = select_boss(args.boss)
+
+# Checking for valid selections
+if selected_fighter == "Invalid Fighter Number" or selected_stage == "Invalid Stage Code" or selected_boss == "Invalid Boss Code":
+    error_code()
 else:
-
-#To Shutdown Game After Quitting on Player Select
-
-    print(f"\n\nShutting Down {game} ... \n\nGOOD BYE!!")
-
+    load_match()
